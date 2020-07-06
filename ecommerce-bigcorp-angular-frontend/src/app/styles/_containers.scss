@@ -1,0 +1,19 @@
+.container-h{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-h-small{
+    display: flex;
+    flex-direction: row;
+    min-width: 90%;
+    align-content: center;
+    justify-content: space-between;
+    margin: 1em;
+}
+
+.container-v{
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+}

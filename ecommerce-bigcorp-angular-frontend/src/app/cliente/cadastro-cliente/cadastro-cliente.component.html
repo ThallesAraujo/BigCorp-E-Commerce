@@ -1,0 +1,8 @@
+
+    <div class="spacer"></div>
+<div class="container-v">
+    <input type="text" value={{cliente?.nome}} (input)="nomeClienteChanged($event);" name="field-nome" id="tf-nome" placeholder="Nome" #tfNome>
+    <button (click)="salvarCliente();" >Salvar</button>
+</div>
+
+

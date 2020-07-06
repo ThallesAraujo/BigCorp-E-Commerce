@@ -1,0 +1,21 @@
+<app-main-section></app-main-section>
+
+<div class="container">
+    <h1 class="main-title">Confira nossas principais promoções:</h1>
+    <div class="container-cards">
+        <div *ngFor="let produto of produtos">
+
+            <div class="card">
+    
+                <img src={{produto.imagem}} alt=""/>
+            
+                <div class="details">
+                    <h3 class="details-title">{{produto.nome}}</h3>
+                    <h2 class="details-description"> R$ {{produto.valor}}</h2>
+                </div>
+            
+            </div>
+    
+        </div>
+    </div>
+</div>

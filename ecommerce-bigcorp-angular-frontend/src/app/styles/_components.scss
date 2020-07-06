@@ -1,0 +1,28 @@
+@import './config';
+
+button{
+    background-color: lighten($color: $accent-color, $amount: 30);
+    border: none!important;
+    color: $secondary-color;
+    border-radius: 1em;
+    font-family: $default-font-family;
+    cursor: pointer;
+    padding: 12px 20px;
+    margin: 8px 0;
+    outline: none;
+}
+
+input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 0.5em;
+    border: 1.5px solid lighten($color: $accent-color, $amount: 20);
+    outline: none;
+}
+
+::placeholder{
+    color: rgb(190, 190, 190);
+}

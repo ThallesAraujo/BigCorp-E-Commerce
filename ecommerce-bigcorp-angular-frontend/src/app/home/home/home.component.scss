@@ -1,0 +1,27 @@
+.container{
+    margin: 2em;
+}
+
+.card{
+    margin-left: 0;
+    margin-right: 0;
+
+    img{
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .container-cards{
+        max-height: 100%;
+        display: flex;
+        flex-direction: row;
+
+        .card{
+            margin: 1em;
+            width: 95%;
+        }
+    }
+
+}

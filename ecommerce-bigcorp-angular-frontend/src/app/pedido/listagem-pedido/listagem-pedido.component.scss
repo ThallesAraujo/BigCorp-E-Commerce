@@ -1,0 +1,10 @@
+@media screen and (min-width: 768px){
+    .container-h{
+        display: flex;
+        flex-direction: row;
+
+        .card{
+            padding: 1em
+        }
+    }
+}

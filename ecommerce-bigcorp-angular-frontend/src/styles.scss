@@ -1,0 +1,78 @@
+@import './app/styles/config';
+@import './app/styles/components';
+@import './app/styles/containers';
+
+*{
+    margin: 0;
+}
+
+.main-title{
+    font-family: $secondary-font;
+    color: gray;
+}
+
+.spacer{
+    padding-top: 5em;
+}
+
+.card{
+    display: flex;
+    margin: 1em;
+    align-items: center;
+    border: 2px solid $accent-color;
+    border-radius: 1em;
+
+    img{
+        margin: 1em;
+        width: 100px;
+        height: 100px;
+    }
+
+    .details{
+        &-title{
+            font-family: $secondary-font;
+        }
+        &-description{
+            font-family: $default-font-family;
+            font-size: 12px;
+        }
+
+        .actions{
+            margin-top: 1em;
+            display: flex;
+            align-items: center;
+
+            @mixin action {
+                padding: 0.5em;
+                cursor: pointer;
+                margin-right: 1em;
+                border-radius: 0.3em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 20px;
+                height: 20px;
+
+            }
+
+            .action-edit{
+                color: $edit-color;
+                background-color: lighten($color: $edit-color, $amount: 30);
+                @include action;
+            }
+
+            .action-delete{
+                color: $delete-color;
+                background-color: lighten($color: $delete-color, $amount: 25);
+                @include action;
+            }
+
+            .action-show-orders{
+                color: $cart-color;
+                background-color: lighten($color: $cart-color, $amount: 25);
+                @include action;
+            }
+        }
+    }
+
+}

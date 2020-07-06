@@ -1,0 +1,26 @@
+<header>
+    <div class="navbar-container">
+        <div class="logo-container" (click)="goToHome()" style="cursor: pointer;">
+            <div class="logo">BIG</div>
+            <div class="second">Corp</div>
+        </div>
+        <div class="menu-btn" id="menu-btn">
+            <span class="menu-btn-burger"></span>
+        </div>
+        <nav class="nav">
+
+            <ul class="menu-nav">
+                <li class="menu-nav-item">
+                    <a class="menu-nav-link" onclick="activateLink()" [routerLink]="['/']" routerLinkActive="router-link-active">Home</a>
+                </li>
+                <li class="menu-nav-item">
+                    <a class="menu-nav-link" onclick="activateLink()" [routerLink]="['/clientes']" routerLinkActive="router-link-active">Clientes</a>
+                </li>
+                
+                <li class="menu-nav-item">
+                    <a class="menu-nav-link" onclick="activateLink()" [routerLink]="['/ajuda']" routerLinkActive="router-link-active">Ajuda</a>
+                </li>
+            </ul>
+        </nav>
+</div>
+</header>

@@ -1,0 +1,10 @@
+{
+
+    "produtos": [
+        {"nome": "Smartphone LG K10", "valor": 500, "imagem": "https://www.lg.com/br/images/celulares/MD05845191/gallery/lg_k10_novo_desktop2.jpg"},
+        {"nome": "Lavadoura Electrolux", "valor": 2300, "imagem": "https://electrolux.vteximg.com.br/arquivos/ids/198713/lavadora-de-roupas-premium-care-wi-fi-13kg-branca-electrolux-LWI13_Lateral.png?v=637152944415400000"},
+        {"nome": "Geladeira Consul", "valor": 2000, "imagem": "https://consul.vteximg.com.br/arquivos/ids/169362-1000-1000/CRM43NK-geladeira-frost-free-380-litros-inox-frontal_1650x1450.jpg?v=636270934064300000"},
+        {"nome": "Liquidificador Arno", "valor": 170, "imagem": "https://i.zst.com.br/images/liquidificador-arno-power-max-ln5548b1-3-1-litros-15-velocidades-1-000-w-photo505351887-12-3-2f.jpg"}
+    ]
+
+}

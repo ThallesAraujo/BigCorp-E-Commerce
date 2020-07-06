@@ -1,0 +1,24 @@
+<div class="spacer"></div>
+<div class="container-h-small">
+    <h1 class="main-title">Clientes</h1>
+    <button (click)="adicionarCliente();" >Adicionar</button>
+</div>
+<div class="container-h" >
+    <ng-template ngFor let-cliente [ngForOf]="clientes" >
+        <div class="card">
+
+            <img src="./assets/images/undraw_male_avatar.svg" alt=""/>
+        
+            <div class="details">
+                <h3 class="details-title">{{cliente.nome}}</h3>
+                <p class="details-description">Cadastrado em {{cliente.dataCadastro}}</p>
+                <div class="actions">
+                    <div class="action-show-orders" title="Visualizar pedidos" (click)="verPedidos(cliente.id)"><i class="gg-shopping-cart"></i></div>
+                    <div class="action-edit" (click)="editarCliente(cliente.id)" title="Editar Cliente"><i class="gg-pen"></i></div>
+                    <div (click)="excluirCliente(cliente.id)" class="action-delete" title="Excluir Cliente"><i class="gg-trash"></i></div>
+                </div>
+            </div>
+        
+        </div>
+    </ng-template>
+</div>
