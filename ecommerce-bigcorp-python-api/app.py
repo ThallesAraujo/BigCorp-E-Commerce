@@ -53,6 +53,15 @@ def getPedidosCliente(id):
         if request.method == 'GET':
             return jsonify(pedidos[int(id)])
 
+@app.route("/ecommerce/v1/pedidos", methods =['GET'])
+def getPedidos():
+    with open('pedidos.json') as database:
+        data = json.load(database)
+        pedidos = []
+        pedidos = data['pedidos']
+        if request.method == 'GET':
+            return jsonify(pedidos)
+
 @app.route("/ecommerce/v1/produtos", methods =['GET'])
 def getProdutos():
     with open('produtos.json') as database:
@@ -68,6 +77,6 @@ def saveClientes(clientes):
         json.dump(clientes, database)
 
 if __name__ == "__main__":
-    port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port)
-    #app.run()
+    #port = int(os.environ.get('PORT', 5000))
+    #app.run(host='0.0.0.0', port=port)
+    app.run()
